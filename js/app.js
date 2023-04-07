@@ -25,30 +25,24 @@ $('document').ready(function () {
 function grafico(hora,tempInc) {
 
 
-    var ctx = document.getElementById('myChart').getContext('2d');
+    const ctx = document.getElementById('myChart');
 
-    var chart = new Chart(ctx, {
-
-        type: 'bar',
-        data: {
-            labels: hora,
-
-            datasets: [{
-                label: 'Temperatura',
-                backgroundColor: ['green', 'blue', 'yellow'],
-                borderColor: 'rgb(255, 99, 132)',
-                data: tempInc
-            }]
-        },
-
-        options: {
-            scales: {
-                xAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: hora,
+        datasets: [{
+          label: 'Temperatura',
+          data: tempInc,
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
         }
+      }
     });
 }
