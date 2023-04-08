@@ -18,4 +18,4 @@ while($results = $statement->fetch(PDO::FETCH_ASSOC)) {
 
 # echo json_encode($result);
 
-include('TempInc.php');
+include('temp.php');
