@@ -94,6 +94,36 @@
           <?php echo json_encode($result[23]["tempMax"]); ?>,
         ],
         borderWidth: 1
+      },
+      {
+        label: 'Temperatura Mínima',
+        data: [
+          <?php echo json_encode($result[0]["tempMin"]); ?>,
+          <?php echo json_encode($result[1]["tempMin"]); ?>,
+          <?php echo json_encode($result[2]["tempMin"]); ?>,
+          <?php echo json_encode($result[3]["tempMin"]); ?>,
+          <?php echo json_encode($result[4]["tempMin"]); ?>,
+          <?php echo json_encode($result[5]["tempMin"]); ?>,
+          <?php echo json_encode($result[6]["tempMin"]); ?>,
+          <?php echo json_encode($result[7]["tempMin"]); ?>,
+          <?php echo json_encode($result[8]["tempMin"]); ?>,
+          <?php echo json_encode($result[9]["tempMin"]); ?>,
+          <?php echo json_encode($result[10]["tempMin"]); ?>,
+          <?php echo json_encode($result[11]["tempMin"]); ?>,
+          <?php echo json_encode($result[12]["tempMin"]); ?>,
+          <?php echo json_encode($result[13]["tempMin"]); ?>,
+          <?php echo json_encode($result[14]["tempMin"]); ?>,
+          <?php echo json_encode($result[15]["tempMin"]); ?>,
+          <?php echo json_encode($result[16]["tempMin"]); ?>,
+          <?php echo json_encode($result[17]["tempMin"]); ?>,
+          <?php echo json_encode($result[18]["tempMin"]); ?>,
+          <?php echo json_encode($result[19]["tempMin"]); ?>,
+          <?php echo json_encode($result[20]["tempMin"]); ?>,
+          <?php echo json_encode($result[21]["tempMin"]); ?>,
+          <?php echo json_encode($result[22]["tempMin"]); ?>,
+          <?php echo json_encode($result[23]["tempMin"]); ?>,
+        ],
+        borderWidth: 1
       }]
     },
     options: {

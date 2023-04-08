@@ -4,7 +4,7 @@ $data = $_POST['dt'];
 
 $pdo = new PDO('mysql:host=localhost;dbname=pampulha;port=3306;charset=utf8', 'root', '');
 
-$sql = "SELECT hora, tempInc, tempMax FROM inmet WHERE data='$data'";
+$sql = "SELECT hora, tempInc, tempMax, tempMin FROM inmet WHERE data='$data'";
 
 $statement = $pdo->prepare($sql);
 
