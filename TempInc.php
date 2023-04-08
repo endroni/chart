@@ -36,7 +36,7 @@
     data: {
       labels: ['00','01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23'],
       datasets: [{
-        label: 'Temperatura',
+        label: 'Temperatura Regitrada',
         data: [
           <?php echo json_encode($result[0]["tempInc"]); ?>,
           <?php echo json_encode($result[1]["tempInc"]); ?>,
@@ -62,6 +62,36 @@
           <?php echo json_encode($result[21]["tempInc"]); ?>,
           <?php echo json_encode($result[22]["tempInc"]); ?>,
           <?php echo json_encode($result[23]["tempInc"]); ?>,
+        ],
+        borderWidth: 1
+      },
+      {
+        label: 'Temperatura Máxima',
+        data: [
+          <?php echo json_encode($result[0]["tempMax"]); ?>,
+          <?php echo json_encode($result[1]["tempMax"]); ?>,
+          <?php echo json_encode($result[2]["tempMax"]); ?>,
+          <?php echo json_encode($result[3]["tempMax"]); ?>,
+          <?php echo json_encode($result[4]["tempMax"]); ?>,
+          <?php echo json_encode($result[5]["tempMax"]); ?>,
+          <?php echo json_encode($result[6]["tempMax"]); ?>,
+          <?php echo json_encode($result[7]["tempMax"]); ?>,
+          <?php echo json_encode($result[8]["tempMax"]); ?>,
+          <?php echo json_encode($result[9]["tempMax"]); ?>,
+          <?php echo json_encode($result[10]["tempMax"]); ?>,
+          <?php echo json_encode($result[11]["tempMax"]); ?>,
+          <?php echo json_encode($result[12]["tempMax"]); ?>,
+          <?php echo json_encode($result[13]["tempMax"]); ?>,
+          <?php echo json_encode($result[14]["tempMax"]); ?>,
+          <?php echo json_encode($result[15]["tempMax"]); ?>,
+          <?php echo json_encode($result[16]["tempMax"]); ?>,
+          <?php echo json_encode($result[17]["tempMax"]); ?>,
+          <?php echo json_encode($result[18]["tempMax"]); ?>,
+          <?php echo json_encode($result[19]["tempMax"]); ?>,
+          <?php echo json_encode($result[20]["tempMax"]); ?>,
+          <?php echo json_encode($result[21]["tempMax"]); ?>,
+          <?php echo json_encode($result[22]["tempMax"]); ?>,
+          <?php echo json_encode($result[23]["tempMax"]); ?>,
         ],
         borderWidth: 1
       }]

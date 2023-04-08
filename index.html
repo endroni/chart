@@ -21,8 +21,17 @@
 
     <p class="lead">Informe o que voce deseja examinar</p>
     
-    <form action="conectaTemp.php" method="get">
+    <form action="conectaTemp.php" method="post">
       <div class="col-auto">
+        <select class="form-select" aria-label="Default select example">
+          <option id="tempInc" name="tempInc" value="tempInc" selected>Temperatura</option>
+          <option value="2" disabled>Umidade</option>
+          <option value="3" disabled>Orvalho</option>
+          <option value="4" disabled>Pressão</option>
+          <option value="5" disabled>Vento</option>
+          <option value="6" disabled>Radição</option>
+          <option value="7" disabled>Chuva</option>
+        </select>
         <label for="dt" class="form-label">Data:</label>      
         <input class="form-control mb-3" type="date" id="dt" name="dt" value="2018-01-01" min="2018-01-01" max="2018-06-31" required>              
         <button type="submit" class="btn btn-primary">Buscar</button>
