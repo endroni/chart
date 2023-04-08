@@ -2,45 +2,31 @@
 <html lang="pt-br">
 
 <head>
-  <title>INMET</title>
+  <title>Teste php</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="container-fluid">
   <header>
     <!-- place navbar here -->
-
-    <p class="lead">Dados da temperatura da cidade de Belo Horizonte.</p>
-    
   </header>
-  <main>
-    <canvas id="myChart"></canvas>
+  <main class="row g-3 align-items-center">
 
-    <form action="chart.php" method="get">
-      <div>
-        <select class="form-select" aria-label="Default select Busca">
-          <option selected>Temperatura</option>
-          <option value="1">Umidade</option>
-          <option value="2">Chuva</option>
-          <option value="3">Precipitação</option>
-        </select>
+    <p class="lead">Informe o que voce deseja examinar</p>
+    
+    <form action="conectaTemp.php" method="get">
+      <div class="col-auto">
+        <label for="dt" class="form-label">Data:</label>      
+        <input class="form-control mb-3" type="date" id="dt" name="dt" value="2018-01-01" min="2018-01-01" max="2018-06-31" required>              
+        <button type="submit" class="btn btn-primary">Buscar</button>
       </div>
-      <div class="mb-3">
-        <label for="data" class="form-label">Data:</label>
-        <input type="date" value="2018-01-01" class="form-control" id="data" name="data" aria-describedby="dataHelp">
-        <div id="dataHelp" class="form-text">Informe a data desejada.</div>
-      </div>
-      
-      
-      <button type="button" class="btn btn-primary">Submit</button>
     </form>
 
   </main>
@@ -55,15 +41,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
-
-  <!-- Ajax -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
-    <!-- Biblioteca Chart.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
-
-    <!-- JS próprio-->
-    <script src="js/app.js"></script> 
 </body>
 
 </html>
