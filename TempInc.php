@@ -18,7 +18,7 @@
   <header>
     <!-- place navbar here -->
 
-    <p class="lead">Dados da temperatura da cidade de Belo Horizonte.</p>
+    <p class="lead">Dados da temperatura da cidade de Belo Horizonte no dia <?php echo($data); ?>.</p>
     
   </header>
   <main>
@@ -139,6 +139,8 @@
   </main>
   <footer>
     <!-- place footer here -->
+
+    <p class="font-monospace">Fonte dos dados: <a href="https://portal.inmet.gov.br/">https://portal.inmet.gov.br/</a></p>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
